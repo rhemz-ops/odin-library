@@ -1,0 +1,184 @@
+/* BASIC CSS REST */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+
+
+
+
+body {
+    color: #000000;
+    background-color: #E8F9FD;
+    width: 100vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 2.75rem;
+    color: #E8F9FD;
+    background-color: #000000;
+
+    position: relative;
+}
+
+.header .add-book-btn {
+    border: 2px solid black;
+    border-radius: 22px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+
+.header .add-book-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+#form {
+    border: 4px solid rgb(146, 146, 146);
+    border-radius: 20px;
+    background-color: #000000;
+    box-shadow: 8px 8px 8px 3px #707070;
+    color: #E8F9FD;
+    width: clamp(250px, 60%, 500px);
+    padding: 2rem;
+
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+}
+
+#form img {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 2.5rem;
+    filter: invert(100%);
+    transform: scaleX(-1);
+    cursor: pointer;
+}
+
+#form .inputs {
+    margin-bottom: 1rem;
+}
+
+#form label {
+    font-weight: bold;
+
+}
+
+#form input {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    border: none;
+    border-radius: 20px;
+    padding: 4px 8px;
+}
+
+#form button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+
+#form button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.cards-container {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+}
+
+.card {
+    border-radius: 22px;
+    color: #FFFFFF;
+    box-shadow: 8px 8px 8px 3px #707070;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card p {
+    margin-bottom: 7px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card-author {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.read-btn {
+    padding: 8px 20px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+
+.read-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+#delete-btn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 2rem;
+    cursor: pointer;
+}
+
+#delete-btn:hover {
+    transform: scale(1.1);
+}
